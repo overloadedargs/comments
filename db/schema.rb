@@ -10,14 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_02_04_100854) do
+ActiveRecord::Schema[8.0].define(version: 2025_02_04_110848) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
   create_table "comments", force: :cascade do |t|
     t.string "comments", limit: 255
     t.string "comment", limit: 255
-    t.integer "status", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "statuses", force: :cascade do |t|
+    t.integer "project_status", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

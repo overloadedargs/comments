@@ -1,0 +1,16 @@
+<h1>Comments</h1>
+
+<%= form_for @comment do |form| %>
+  <%= form.label "comment:" %>
+  <%= form.text_field :comments %>
+
+  <%= form.submit "Add Comment" %>
+<% end %>
+
+<h1>Statuses</h1>
+
+<%= form_for @status do |form| %>  
+  <%= form.select :project_status, options_for_select(Status.project_statuses.map {|k, _| [k, k.to_sym]}) %>
+
+  <%= form.submit "Add Project Status Change" %>
+<% end %>

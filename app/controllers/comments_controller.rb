@@ -22,9 +22,7 @@ class CommentsController < ApplicationController
       end       
     end
 
-    def show
-
-    end
+    def show; end
 
     private
 
@@ -33,6 +31,6 @@ class CommentsController < ApplicationController
       end
 
       def comment_params
-        params.expect(comment: [:comments, :status])
+        params.expect(comment: [:comments])
       end
 end
