@@ -8,3 +8,41 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+html {
+    background-color: #000000;
+}
+
+div {
+    background-color: #009a92;
+    margin-left: 200px;
+    padding: 20px 50px 40px;
+}
+
+ p {
+    color: black;
+    font-family: Gill Sans Extrabold, sans-serif;
+    border: 2px solid powderblue;
+    padding: 10px;
+    margin: 0px;
+  }
+
+h1 {
+  font-family: Impact, sans-serif;
+  color: white;
+}
+
+h2 {
+    font-family: Impact, sans-serif;
+    color: rgb(7, 7, 7);
+}
+
+
+h3 a {
+    font-family: Impact, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.active {
+    color: rgb(71, 255, 71);
+}

@@ -17,7 +17,7 @@ class CommentsController < ApplicationController
         if @comment.save
           format.html  { redirect_to(@comment, notice: 'Added comment.') }
         else
-          render :new
+          redirect_to new_project_status_comment_path
         end
       end       
     end

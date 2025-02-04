@@ -1,4 +1,4 @@
 class Comment < ApplicationRecord
-  validates :comment, presence: true
-  validates :comment, format: { with: /\A[a-zA-Z ]+\z/, message: "only allows letters" }
+  validates :comments, presence: true
+  validates :comments, format: { with: /\A[a-zA-Z0-9 ]*\z/, message: "only allows letters" }
 end

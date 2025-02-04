@@ -1,15 +1,19 @@
-<h1>Comments List</h1>
+<div class="page">
+  <h1>Comments List</h1>
 
-<% @comments.each do |c| %>
-  <p1><%= c.comments %></p1><br />
-<% end %>
+  <% @comments.each do |c| %>
+    <p><%= c.comments %></p><br />
+  <% end %>
 
-<h1>Project Status Changes</h1>
+  <h1>Project Status Changes</h1>
 
-<% @statuses.each do |s| %>
-  <p1><%= s.project_status %></p1><br />
-<% end %>
+  <% @statuses.each do |s| %>
+    <p class=<%="#{s.project_status}"%>>
+      <%= s.project_status.capitalize %>
+    </p><br />
+  <% end %>
 
-<h2>Create new project status & comment</h2>
+  <h2>Create new project status & comment</h2>
 
-<%= link_to "Add new comment or Project status change", new_project_status_comment_path %>
+  <h3><%= link_to "Add new comment or Project status change", new_project_status_comment_path %></h3>
+</div>
