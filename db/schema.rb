@@ -15,6 +15,9 @@ ActiveRecord::Schema[8.0].define(version: 2025_02_04_100854) do
   enable_extension "pg_catalog.plpgsql"
 
   create_table "comments", force: :cascade do |t|
+    t.string "comments", limit: 255
+    t.string "comment", limit: 255
+    t.integer "status", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

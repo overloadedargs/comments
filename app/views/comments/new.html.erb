@@ -1,0 +1,10 @@
+<h1>Comments</h1>
+
+<%= form_for @comment do |form| %>
+  <%= form.label "comment:" %>
+  <%= form.text_field :comments %>
+
+  <%= form.select :status, options_for_select(Comment.statuses.map {|k, _| [k, k.to_sym]}) %>
+  <br />
+  <%= form.submit "Add Comment" %>
+<% end %>

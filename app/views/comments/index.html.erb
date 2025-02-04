@@ -1,1 +1,10 @@
-<h1>Comments</h1>
+<h1>Comments List</h1>
+
+<% @comments.each do |c| %>
+  <p1><%= c.comments %> : <%= c.status %></p1><br />
+<% end %>
+
+
+<h2>Create new comment</h2>
+
+<%= link_to "Add new comment", new_comment_path %>
