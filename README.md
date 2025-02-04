@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # comments
 Programming Assignment test
 =======
@@ -26,4 +25,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
->>>>>>> 41d4b64 (First commit)
